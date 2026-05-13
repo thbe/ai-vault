@@ -1,0 +1,18 @@
+{
+  "styles": {
+    "BAU": {
+      "backgroundColor": "#4a587d"
+    },
+    "Ideas": {
+      "backgroundColor": "#79567b"
+    },
+    "Projects": {
+      "backgroundColor": "#996666"
+    },
+    "Work": {
+      "backgroundColor": "#23615a"
+    }
+  },
+  "presets": {},
+  "presetOrder": []
+}
