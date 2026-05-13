@@ -62,6 +62,7 @@ How the practice has evolved beyond autocomplete into autonomous, agentic workfl
 - [[Sub-Agents and Delegation]] — parallelism, isolated contexts, fan-out patterns
 - [[Common Failure Patterns]] — and how to recognize them early
 - [[Practical Limits of AI]] — what LLMs can't do, and why the discipline above exists
+- [[LLM Wiki Pattern]] — Karpathy's pattern for LLM-maintained knowledge bases (this vault is an instance)
 
 ---
 
@@ -77,7 +78,7 @@ How the practice has evolved beyond autocomplete into autonomous, agentic workfl
 | Topic | Folder | Notes |
 |---|---|---|
 | OpenCode product | `OpenCode/` | 8 |
-| Methodology & patterns | `Modern AI Coding/` | 6 |
+| Methodology & patterns | `Modern AI Coding/` | 7 |
 | Cross-tool standards | `Ecosystem/` | 2 |
 | Meta | `/` (root) | 2 |
 

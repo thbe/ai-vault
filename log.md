@@ -46,3 +46,22 @@ Quick recall: `grep "^## \[" log.md | tail -20`.
 - Follow-ups:
   - English transcript still missing (only German captured). Re-fetch with cooled rate-limit when convenient and add side-by-side under same `[^simple-aufgabe-yt]` entry.
   - The "industrial revolution / cognitive routine work displacement" thread is touched in §5 of [[Practical Limits of AI]] but not developed elsewhere — could become its own short note if a third source corroborates.
+
+## [2026-05-13] ingest | Karpathy gist — "LLM Wiki"
+
+- Source: Andrej Karpathy gist describing the LLM-maintained persistent wiki pattern (vs. one-shot RAG). Pulled via `webfetch`; not stored locally (gist URL is canonical and stable).
+- Significance: this vault is a direct instance of the pattern. Ingest/query/lint operations, `index.md` + `log.md` with grep-able prefix, three-layer architecture (raw / wiki / schema) — all already present in our [[AGENTS]]. Either Karpathy's gist inspired our setup or convergent design; either way the lineage is now made explicit.
+- Notes created:
+  - [[LLM Wiki Pattern]] — full write-up of the pattern with explicit "this vault as an instance" mapping table and a "deviations worth knowing" section (TitleCase filenames, `_Index.md` leading underscore, four-bucket split, single Resources file).
+- Notes updated:
+  - [[Context Engineering]] — extended statelessness callout with a paragraph linking the per-session discipline to its vault-scale formalisation in [[LLM Wiki Pattern]].
+  - [[Agentic Coding Paradigm]] — added [[LLM Wiki Pattern]] to See also (humans-curate / LLM-bookkeeps applied to knowledge work).
+  - [[Resources]] — renamed "Talks & explainers" → "Talks & essays"; added `[^llm-wiki-gist]` row + footnote.
+  - [[_Index]] — added [[LLM Wiki Pattern]] under 🧠 Modern AI Coding; bumped folder count 6→7.
+- Decisions:
+  - Title `LLM Wiki Pattern` chosen over `LLM Wiki` to avoid conflation with the `llm-wiki` skill in dotfiles.
+  - [[About]] left untouched per prior user instruction, despite being a natural place to mention the pattern. Recommend revisiting next time About is touched.
+  - [[AGENTS]] left ops-focused (no §1 amendment); the new note carries the conceptual lineage.
+- Follow-ups:
+  - When [[About]] is next edited, consider adding a one-sentence "this vault is an instance of the [[LLM Wiki Pattern]]" callout.
+  - The gist mentions `qmd` (hybrid-search MCP); if the vault grows past ~100 sources, evaluate adopting it. Currently no need — the [[_Index]] suffices.

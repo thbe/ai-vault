@@ -66,6 +66,7 @@ OpenCode positions itself as **terminal-native, model-agnostic, open-source** â€
 - [[Sub-Agents and Delegation]]
 - [[Common Failure Patterns]]
 - [[Practical Limits of AI]]
+- [[LLM Wiki Pattern]] â€” same humans-curate / LLM-bookkeeps split applied to knowledge work
 - [[OpenCode Overview]]
 
 ---
