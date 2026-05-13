@@ -57,6 +57,7 @@ Authoritative external sources cited across this vault. Notes reference these by
 | [^limits-of-ai-yt] | "The Limits of AI: Generative AI, NLP, AGI, & What's Next?" — YouTube explainer (IBM-style, narrator Jeff). DIKW pyramid framing; macro/micro goal split; RAG/MoE/chaining as hallucination mitigations. | <https://youtu.be/rBlCOLfMYfw> | `raw/transcripts/limits-of-ai-rblcolfmyfw.txt` (auto-captions) |
 | [^simple-aufgabe-yt] | "Die simple Aufgabe, an der jede KI scheitert" — German YouTube explainer. Statelessness; distribution-bound reasoning; the Lucas-Penrose / Gödel argument (flagged by the source itself as "kontrovers diskutiert" — contested); AI-as-tool framing where human expertise becomes *more* decisive. Used here for explanatory framing of practical and theoretical limits, not as endorsement of Penrose's philosophical conclusion. | <https://youtu.be/x_ZhqjbgdAQ> | `raw/transcripts/simple-aufgabe-an-der-jede-ki-scheitert-x_zhqjbgdaq.txt` (auto-captions, German) |
 | [^llm-wiki-gist] | Andrej Karpathy — "LLM Wiki" (gist, 2026). The pattern of LLM-maintained persistent wikis vs. one-shot RAG; three-layer architecture (raw sources / wiki / schema); ingest/query/lint operations; index.md + log.md; Memex lineage. This vault is an instance of the pattern. | <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f> | — |
+| [^gsd-readme] | GSD ("Get Shit Done") — README on GitHub. Multi-runtime spec-driven workflow tool by TÂCHES; coined "context rot" as the named failure mode; six-command loop; persistent project-state artifacts; parallel-wave executor architecture; explicitly designed around `--dangerously-skip-permissions`. MIT, `npx get-shit-done-cc`. | <https://github.com/gsd-build/get-shit-done> | — |
 
 ---
 
@@ -87,3 +88,4 @@ Authoritative external sources cited across this vault. Notes reference these by
 [^limits-of-ai-yt]: <https://youtu.be/rBlCOLfMYfw>
 [^simple-aufgabe-yt]: <https://youtu.be/x_ZhqjbgdAQ>
 [^llm-wiki-gist]: <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>
+[^gsd-readme]: <https://github.com/gsd-build/get-shit-done>

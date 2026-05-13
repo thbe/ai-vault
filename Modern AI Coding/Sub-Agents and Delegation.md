@@ -84,6 +84,9 @@ Pre-defined subagents in `.opencode/agent/*.md` with focused descriptions, narro
 - `test-writer` — edit limited to `tests/**`, system prompt focused on coverage
 - `migration-runner` — bash limited to `npm run migrate*`
 
+> [!example] Real-world implementation
+> [[GSD (Get Shit Done)]] industrialises the fresh-context pattern: every executor task starts with its own ~200k-token context, plans run in parallel waves, and each task produces an atomic commit. The main session stays at 30–40% utilisation because all the heavy work happens in children.[^gsd-readme] It's a useful proof point that this pattern scales beyond ad-hoc one-offs into a default workflow.
+
 ## The delegation cost model
 
 Every delegation has overhead:
@@ -121,4 +124,4 @@ The break-even is roughly: **delegate if the subagent would otherwise consume mo
 - [[Plan-Build-Verify Workflow]] — where delegation slots in
 
 ---
-**Sources:** [^cc-best] [^oc-agents]
+**Sources:** [^cc-best] [^oc-agents] [^gsd-readme]

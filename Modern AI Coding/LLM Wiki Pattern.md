@@ -95,6 +95,7 @@ None are required. This vault currently uses none of them beyond plain Obsidian 
 - [[Agentic Coding Paradigm]] — humans-own-*what*/*why*, agents-own-*how* applied to knowledge work as well as code.
 - [[Plan-Build-Verify Workflow]] — ingest's "discuss-then-write" is plan-then-build at the knowledge layer.
 - [[Sub-Agents and Delegation]] — large ingest tasks (re-classify the whole vault, lint everything) are natural delegation candidates.
+- [[GSD (Get Shit Done)]] — same persistent-artifact insight applied to *project state* (`STATE.md`, `CONTEXT.md`, `ROADMAP.md`) instead of knowledge.
 - [[AGENTS]] — this vault's concrete instantiation of the schema layer.
 
 ---

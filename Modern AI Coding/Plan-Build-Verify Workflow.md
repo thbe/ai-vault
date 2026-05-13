@@ -127,6 +127,18 @@ agent: git commit -m "feat(auth): rate-limit /api/login (5/min)"
 
 Total turns: ~8. Total rework: zero.
 
+## Concrete instantiations
+
+The four-phase loop shows up under different names in different systems:
+
+| System | Plan | Build | Verify | Commit |
+|---|---|---|---|---|
+| Anthropic best practices[^cc-best] | Explore + Plan | Code | (implicit) | Commit |
+| OpenCode plan/build modes | `mode: plan` (`edit: deny`) | `mode: build` | tests | git |
+| [[GSD (Get Shit Done)]][^gsd-readme] | `/gsd-discuss-phase` + `/gsd-plan-phase` | `/gsd-execute-phase` | `/gsd-verify-work` | `/gsd-ship` |
+
+GSD adds an explicit `discuss` step *before* `plan` to capture implementation decisions (layouts, API shapes, error handling) that the human imagines but rarely states upfront — a useful refinement when the agent would otherwise plan against reasonable-but-wrong defaults.
+
 ## See also
 
 - [[Agents]] — plan mode vs build mode in OpenCode
@@ -135,4 +147,4 @@ Total turns: ~8. Total rework: zero.
 - [[Common Failure Patterns]] — what skipping each phase looks like
 
 ---
-**Sources:** [^cc-best] [^oc-agents]
+**Sources:** [^cc-best] [^oc-agents] [^gsd-readme]

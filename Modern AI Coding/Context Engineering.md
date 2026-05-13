@@ -85,6 +85,9 @@ Each summary becomes the new floor; everything before it can be dropped.
 > 800 lines of every convention, edge case, and historical decision. Loaded on every prompt. Costs ~3000 tokens before the user even types.
 > **Fix:** move rarely-used content into [[Skills]].
 
+> [!info] "Context rot" — the named failure
+> [[GSD (Get Shit Done)]] popularised the term **context rot**: the quality degradation that happens as the AI's context window fills up over a long session.[^gsd-readme] It's a useful single-word handle for the cumulative effect of every anti-pattern below — stale tool output, dead exploration, conversation hoarding. The defence is the same: aggressive compression at natural boundaries (see *The compression pattern* above).
+
 > [!failure] The mega-MCP loadout
 > Twelve MCP servers enabled globally. Each contributes 5–50 tools. Tool catalog alone consumes 10K+ tokens.
 > **Fix:** scope MCPs per-agent (see [[MCP Servers]]).
@@ -120,4 +123,4 @@ Above this, expect quality degradation regardless of advertised window size.
 - [[Practical Limits of AI]] — the underlying reasons this discipline is load-bearing
 
 ---
-**Sources:** [^cc-best] [^cc-how] [^cc-mem] [^oc-skills] [^limits-of-ai-yt] [^simple-aufgabe-yt] [^llm-wiki-gist]
+**Sources:** [^cc-best] [^cc-how] [^cc-mem] [^oc-skills] [^limits-of-ai-yt] [^simple-aufgabe-yt] [^llm-wiki-gist] [^gsd-readme]

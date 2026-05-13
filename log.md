@@ -65,3 +65,26 @@ Quick recall: `grep "^## \[" log.md | tail -20`.
 - Follow-ups:
   - When [[About]] is next edited, consider adding a one-sentence "this vault is an instance of the [[LLM Wiki Pattern]]" callout.
   - The gist mentions `qmd` (hybrid-search MCP); if the vault grows past ~100 sources, evaluate adopting it. Currently no need — the [[_Index]] suffices.
+
+## [2026-05-13] ingest | GSD (Get Shit Done) README
+
+- Source: <https://github.com/gsd-build/get-shit-done> (README, fetched via `webfetch`). Multi-runtime spec-driven workflow by TÂCHES, MIT, `npx get-shit-done-cc`. User intent flagged as "I also use GSD" — included as an active part of the practice, written neutrally pending confirmation of "we use it" framing.
+- Significance: GSD is best read as an opinionated *bundle* of techniques this vault already documents — not a new paradigm. Direct mappings: fresh sub-agent contexts → [[Sub-Agents and Delegation]]; persistent `STATE.md`/`CONTEXT.md`/`ROADMAP.md` artifacts → [[LLM Wiki Pattern]] applied to project state; `/gsd-discuss-phase` → `/gsd-plan-phase` → `/gsd-execute-phase` → `/gsd-verify-work` → [[Plan-Build-Verify Workflow]]; "context rot" as the named failure mode → [[Context Engineering]]. Two notable design choices: (1) explicit `discuss` step before plan to capture user-imagined implementation decisions; (2) explicitly built around `--dangerously-skip-permissions` for unattended automation.
+- Notes created:
+  - [[GSD (Get Shit Done)]] in `Ecosystem/` — TL;DR + six-command loop table + three-problems-it-solves section (each cross-linking to the relevant Modern AI Coding note) + persistent artifacts list with explicit LLM-Wiki-Pattern callout + configuration brief + runtime/permissions stance + "where it sits relative to this vault" mapping table + quotables.
+- Notes updated:
+  - [[Context Engineering]] — added `> [!info] "Context rot" — the named failure` callout in anti-patterns section; added `[^gsd-readme]` to Sources.
+  - [[Sub-Agents and Delegation]] — added `> [!example] Real-world implementation` callout pointing at GSD's parallel-wave executor architecture; added `[^gsd-readme]` to Sources.
+  - [[Plan-Build-Verify Workflow]] — added "Concrete instantiations" mapping table (Anthropic best practices / OpenCode plan-build modes / GSD six commands); added `[^gsd-readme]` to Sources.
+  - [[LLM Wiki Pattern]] — added cross-link in See also: same persistent-artifact insight applied to project state.
+  - [[Permissions]] — added "When projects opt out entirely" section flagging GSD as the canonical example of `--dangerously-skip-permissions` by design; added `[^gsd-readme]` to Sources.
+  - [[Resources]] — added `[^gsd-readme]` row + footnote.
+  - [[_Index]] — added [[GSD (Get Shit Done)]] under 🌐 Ecosystem; bumped Ecosystem folder count 2→3.
+- Decisions:
+  - Folder: `Ecosystem/` (concrete cross-runtime tool, sits with [[Model Context Protocol]] and [[AGENTS.md Standard]]). Methodology aspects link *into* `Modern AI Coding/` notes rather than duplicating them.
+  - Title: `GSD (Get Shit Done)` with aliases `[GSD, Get Shit Done]` for wikilink resolution either way.
+  - Coverage: concise overview + cross-links, not exhaustive command/flag documentation. Upstream `docs/` change faster than we can track.
+  - The README's `$GSD` Solana token badge ignored — irrelevant to the engineering value.
+- Follow-ups:
+  - User confirmed active GSD usage. Note now carries a "Used here" callout marking it as part of the active local toolkit. Open follow-up: capture local GSD config conventions and lessons-learned as they accrete from real-project use.
+  - If/when adopting GSD's `discuss` step in this vault's own workflow, consider mirroring it explicitly in [[AGENTS]] §4.1 (currently we already discuss-before-write at step 2; could rename for vocabulary alignment).

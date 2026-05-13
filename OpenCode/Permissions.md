@@ -182,6 +182,10 @@ permission:
 > { "permission": { "webfetch": "deny", "websearch": "deny" } }
 > ```
 
+## When projects opt out entirely
+
+Some workflows are explicitly designed for `--dangerously-skip-permissions`: every tool call auto-approved, no interactive prompts, full automation. [[GSD (Get Shit Done)]] is the canonical example — its parallel-wave executor model only works without prompts.[^gsd-readme] The trade-off is real: you give up the safety net described on this page in exchange for unattended throughput. It's a defensible choice for sandboxed/containerised work, a dangerous one against your live home directory. Decide deliberately.
+
 ## See also
 
 - [[Agents]] — per-agent permission overrides
@@ -190,4 +194,4 @@ permission:
 - [[Common Failure Patterns]] — `doom_loop` is your safety net
 
 ---
-**Sources:** [^oc-permissions]
+**Sources:** [^oc-permissions] [^gsd-readme]

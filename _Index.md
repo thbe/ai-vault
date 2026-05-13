@@ -70,6 +70,7 @@ How the practice has evolved beyond autocomplete into autonomous, agentic workfl
 
 - [[Model Context Protocol]] — the "USB-C for AI" standard powering tool integrations
 - [[AGENTS.md Standard]] — the emerging cross-tool convention for agent instructions
+- [[GSD (Get Shit Done)]] — opinionated multi-runtime spec-driven workflow that bundles context engineering, sub-agents, and plan-build-verify into six commands
 
 ---
 
@@ -79,7 +80,7 @@ How the practice has evolved beyond autocomplete into autonomous, agentic workfl
 |---|---|---|
 | OpenCode product | `OpenCode/` | 8 |
 | Methodology & patterns | `Modern AI Coding/` | 7 |
-| Cross-tool standards | `Ecosystem/` | 2 |
+| Cross-tool standards | `Ecosystem/` | 3 |
 | Meta | `/` (root) | 2 |
 
 ---
