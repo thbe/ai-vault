@@ -47,6 +47,9 @@ The two belong together: OpenCode is one of the cleanest concrete implementation
 
 Each note's frontmatter could carry a `last_verified` date in the future. For now, the vault as a whole was verified against upstream sources on the date in [[_Index]].
 
+> [!info] This vault is itself an instance of a documented pattern
+> The structure here — `_Index.md` MOC, ingest/query/lint operations, append-only `log.md`, single-source `Resources.md`, LLM owns content / human curates direction — is a direct instance of the [[LLM Wiki Pattern]] popularised by Andrej Karpathy. The pattern is documented inside the vault as a first-class note, and this vault is the worked example.
+
 ---
 
 See also: [[_Index]] · [[Resources]]

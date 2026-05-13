@@ -100,3 +100,9 @@ Quick recall: `grep "^## \[" log.md | tail -20`.
   - Local GSD config conventions — awaiting first concrete patterns from real-project use.
   - `qmd` evaluation — only relevant if vault grows past ~100 sources.
   - English transcript for video 2 — retry later when YouTube rate limits cool off.
+
+## [2026-05-13] meta | About.md self-reference + drop spurious follow-up
+
+- Added one-time callout to `About.md` (with explicit user approval) noting the vault is itself an instance of [[LLM Wiki Pattern]]. Standing rule "don't touch About.md" otherwise unchanged.
+- Dropped open follow-up "evaluate `qmd` (hybrid-search MCP)" — could not be traced to any cited source and was likely hallucinated residue from earlier context. Per `AGENTS.md §9`, removed rather than defended.
+- Notes updated: `About.md`.
