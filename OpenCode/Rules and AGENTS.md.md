@@ -7,6 +7,8 @@ tags:
 aliases:
   - AGENTS.md
   - Rules
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Rules and `AGENTS.md`

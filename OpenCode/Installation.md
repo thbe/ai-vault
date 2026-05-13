@@ -3,6 +3,8 @@ title: Installation
 tags:
   - opencode
   - setup
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Installation

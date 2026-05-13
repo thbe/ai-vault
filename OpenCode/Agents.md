@@ -4,6 +4,8 @@ tags:
   - opencode
   - agents
   - architecture
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Agents

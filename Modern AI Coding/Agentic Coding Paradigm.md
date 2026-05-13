@@ -4,6 +4,8 @@ tags:
   - methodology
   - agentic
   - paradigm
+last_verified: 2026-05-13
+status: stable
 ---
 
 # The Agentic Coding Paradigm

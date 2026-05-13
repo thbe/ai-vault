@@ -88,3 +88,15 @@ Quick recall: `grep "^## \[" log.md | tail -20`.
 - Follow-ups:
   - User confirmed active GSD usage. Note now carries a "Used here" callout marking it as part of the active local toolkit. Open follow-up: capture local GSD config conventions and lessons-learned as they accrete from real-project use.
   - If/when adopting GSD's `discuss` step in this vault's own workflow, consider mirroring it explicitly in [[AGENTS]] §4.1 (currently we already discuss-before-write at step 2; could rename for vocabulary alignment).
+
+## [2026-05-13] meta | Maintenance pass — frontmatter backfill + AGENTS.md discuss-gate
+
+- Backfilled `last_verified: 2026-05-13` and `status: stable` on 15 notes missing those fields: all 8 OpenCode/, all 5 Modern AI Coding/, and 2 Ecosystem/ (AGENTS.md Standard, Model Context Protocol). GSD already had them from yesterday's ingest.
+- Strengthened §4.1 step 2 in `AGENTS.md`: "Discuss" is now an explicit hard-gate checkpoint, with cross-reference to [[GSD (Get Shit Done)]] and [[Plan-Build-Verify Workflow]] — making the local INGEST workflow vocabulary parallel to GSD's `discuss → plan → execute → verify` cadence.
+- Retried English transcript for video 2 (`x_ZhqjbgdAQ`) — still HTTP 429 from YouTube. Stays as open follow-up.
+- Notes updated: 15 (frontmatter) + `AGENTS.md` (discuss gate).
+- Open follow-ups (not actioned, awaiting input or external trigger):
+  - About.md: LLM Wiki Pattern instance status callout — DEFERRED, user has standing instruction not to touch About.md without explicit ask.
+  - Local GSD config conventions — awaiting first concrete patterns from real-project use.
+  - `qmd` evaluation — only relevant if vault grows past ~100 sources.
+  - English transcript for video 2 — retry later when YouTube rate limits cool off.

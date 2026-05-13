@@ -168,7 +168,7 @@ OpenCode supports custom sub-agents[^1].
 When the human points to a source (URL, file in `raw/`, pasted content) and says "ingest this":
 
 1. **Read** the source fully. For PDFs use the `liteparse` skill; for diagrams/screenshots use `analysis-vision`; for live URLs use `webfetch`.
-2. **Discuss** key takeaways in 3-6 bullet points before writing anything. Confirm direction with the human.
+2. **Discuss** (explicit gate) key takeaways in 3-6 bullet points before writing anything. Confirm direction with the human. This is a hard checkpoint — no edits until the human acknowledges. Mirrors the `discuss → plan → execute → verify` cadence used by [[GSD (Get Shit Done)]] and the [[Plan-Build-Verify Workflow]].
 3. **Identify** which of the four buckets it belongs in (`OpenCode/`, `Modern AI Coding/`, `Ecosystem/`, or root meta) — or whether it spans several.
 4. **Update existing notes** first. Add new info, refine claims, flag contradictions inline:
    > [!warning] Conflicting source

@@ -3,6 +3,8 @@ title: Configuration
 tags:
   - opencode
   - config
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Configuration

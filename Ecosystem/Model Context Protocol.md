@@ -7,6 +7,8 @@ tags:
   - standards
 aliases:
   - MCP
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Model Context Protocol (MCP)

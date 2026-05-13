@@ -4,6 +4,8 @@ tags:
   - opencode
   - permissions
   - safety
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Permissions

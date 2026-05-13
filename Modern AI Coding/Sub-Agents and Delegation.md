@@ -5,6 +5,8 @@ tags:
   - subagents
   - delegation
   - parallelism
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Sub-Agents and Delegation

@@ -5,6 +5,8 @@ tags:
   - overview
 aliases:
   - OpenCode
+last_verified: 2026-05-13
+status: stable
 ---
 
 # OpenCode Overview

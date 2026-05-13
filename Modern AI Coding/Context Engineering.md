@@ -5,6 +5,8 @@ tags:
   - context
   - prompting
   - core-skill
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Context Engineering

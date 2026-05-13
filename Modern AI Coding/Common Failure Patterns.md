@@ -5,6 +5,8 @@ tags:
   - failures
   - debugging
   - antipatterns
+last_verified: 2026-05-13
+status: stable
 ---
 
 # Common Failure Patterns
