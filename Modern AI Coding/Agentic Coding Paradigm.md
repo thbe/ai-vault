@@ -47,6 +47,9 @@ Concrete consequences:
 - **Context is currency.** See [[Context Engineering]] — the discipline of feeding the model exactly what it needs and nothing more.
 - **Process beats prompting.** A good [[Plan-Build-Verify Workflow]] outperforms clever one-shot prompts.
 
+> [!tip] Macro vs. micro goals
+> A useful split: **humans own the *what* and the *why*** (the macro goal — purpose, objective, success criteria); **agents own the *how*** (micro goals — the steps inside a larger task, executed and self-corrected). Today's agents are good at micro-goal decomposition; the macro-level "why are we even doing this?" remains a human responsibility.[^limits-of-ai-yt] This is the same boundary [[Plan-Build-Verify Workflow|Plan→Build→Verify]] enforces procedurally, and the same reason [[Sub-Agents and Delegation|delegation prompts]] must specify a deliverable shape. Reinforced by [^simple-aufgabe-yt]: the AI is a **tool**, and as AI-mediated work spreads, true human expertise becomes *more* decisive (not less) — because the human is the one holding the macro goal and judging output. See [[Practical Limits of AI]] for why this split is durable, not transitional.
+
 ## The OpenCode philosophy
 
 OpenCode positions itself as **terminal-native, model-agnostic, open-source** — the developer keeps control of the runtime, the prompts ([[Rules and AGENTS.md]]), and the tools ([[MCP Servers]]). This is the inverse of vendor-locked agentic IDEs and reflects a broader industry pattern: as agents become more capable, the value moves *away* from the wrapper and *toward* the open instruction surfaces (rules, skills, MCP).[^oc-docs] [^agents-md]
@@ -62,7 +65,8 @@ OpenCode positions itself as **terminal-native, model-agnostic, open-source** �
 - [[Plan-Build-Verify Workflow]]
 - [[Sub-Agents and Delegation]]
 - [[Common Failure Patterns]]
+- [[Practical Limits of AI]]
 - [[OpenCode Overview]]
 
 ---
-**Sources:** [^cc-best] [^cc-how] [^oc-docs] [^agents-md]
+**Sources:** [^cc-best] [^cc-how] [^oc-docs] [^agents-md] [^limits-of-ai-yt] [^simple-aufgabe-yt]

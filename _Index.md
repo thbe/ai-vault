@@ -61,6 +61,7 @@ How the practice has evolved beyond autocomplete into autonomous, agentic workfl
 - [[Plan-Build-Verify Workflow]] — the four-phase loop that actually ships
 - [[Sub-Agents and Delegation]] — parallelism, isolated contexts, fan-out patterns
 - [[Common Failure Patterns]] — and how to recognize them early
+- [[Practical Limits of AI]] — what LLMs can't do, and why the discipline above exists
 
 ---
 
@@ -76,7 +77,7 @@ How the practice has evolved beyond autocomplete into autonomous, agentic workfl
 | Topic | Folder | Notes |
 |---|---|---|
 | OpenCode product | `OpenCode/` | 8 |
-| Methodology & patterns | `Modern AI Coding/` | 5 |
+| Methodology & patterns | `Modern AI Coding/` | 6 |
 | Cross-tool standards | `Ecosystem/` | 2 |
 | Meta | `/` (root) | 2 |
 

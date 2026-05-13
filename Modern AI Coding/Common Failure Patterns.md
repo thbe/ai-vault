@@ -29,6 +29,9 @@ Catalog of the recurring ways agentic coding sessions go wrong, with cause, smel
 
 **Cause:** model hallucinates verification, or runs a command that exits 0 without doing anything (e.g., `npm test` in a dir with no test runner configured).
 
+> [!info] Upstream mitigations vs. user-side controls
+> Vendors fight raw hallucination with **retrieval-augmented generation (RAG)**, **mixture-of-experts (MoE)** routing, and **model chaining**.[^limits-of-ai-yt] These reduce *base rate* but never eliminate it. The fixes below are what *you* control at the orchestration layer — they're what makes a confident-but-wrong answer get caught instead of committed.
+
 **Fix:**
 - Always run the verification yourself in the [[Plan-Build-Verify Workflow|Verify phase]]
 - Make the agent quote the test output, not summarize it
@@ -150,7 +153,21 @@ Catalog of the recurring ways agentic coding sessions go wrong, with cause, smel
 
 ---
 
-## 12. Inconsistent naming / style
+## 12. Distribution-bound surprise
+
+**Smell:** the model produces a fluent, confident, syntactically valid solution to a task that looks simple — and it's wrong in a way that's hard to spot without running it.
+
+**Cause:** the task sits *just outside* the training distribution. LLMs interpolate brilliantly on patterns they've seen and degrade silently on genuinely novel composition.[^simple-aufgabe-yt] There is no internal "I'm uncertain" signal that surfaces by default — see [[Practical Limits of AI#2. Distribution-bound reasoning]].
+
+**Fix:**
+- Treat fluency as **independent of** correctness — never use confidence as a quality signal
+- Verify by execution, not by reading (see [[Plan-Build-Verify Workflow|Verify]])
+- For novel territory, demand a worked example or test case the agent ran *itself*
+- If the domain is bespoke (internal framework, in-house DSL), expect higher hallucination rates and increase verification weight accordingly
+
+---
+
+## 13. Inconsistent naming / style
 
 **Smell:** new code uses `snake_case`, the rest of the file is `camelCase`.
 
@@ -180,6 +197,7 @@ When something feels off, walk through:
 - [[Plan-Build-Verify Workflow]]
 - [[Sub-Agents and Delegation]]
 - [[Permissions]]
+- [[Practical Limits of AI]] — the underlying limits most of these patterns flow from
 
 ---
-**Sources:** [^cc-best] [^oc-permissions] [^oc-agents]
+**Sources:** [^cc-best] [^oc-permissions] [^oc-agents] [^limits-of-ai-yt]

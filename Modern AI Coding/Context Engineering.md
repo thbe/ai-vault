@@ -14,6 +14,12 @@ tags:
 
 It is the single highest-leverage skill in agentic coding. Models do not fail because they're stupid; they fail because they were given the wrong context, too much context, or stale context.
 
+> [!tip] Why this discipline exists at all
+> LLM sessions are **stateless** — there is no persistent memory inside the model. What looks like memory is context re-injected on every turn (system prompt, conversation, retrieved files, tool output).[^simple-aufgabe-yt] This is a permanent architectural property, not something a future model release will fix. Context engineering is the practice of curating that re-injected payload deliberately. See [[Practical Limits of AI]] for the full list of limits this discipline compensates for.
+
+> [!info] Optional framing — the DIKW pyramid
+> The classic **Data → Information → Knowledge → Wisdom** pyramid is a useful lens here.[^limits-of-ai-yt] Raw *data* (file bytes, API responses) becomes *information* once given context (filename, schema), becomes *knowledge* when interpreted (this code is the auth path), becomes *wisdom* when applied to a goal (therefore don't refactor it without reading the security policy). Context engineering is the deliberate work of shipping the model the **rung it actually needs** — usually knowledge, occasionally raw data, never wisdom (that's the human's job; see [[Agentic Coding Paradigm]]).
+
 ## The context economy
 
 Every token in the window:
@@ -109,6 +115,7 @@ Above this, expect quality degradation regardless of advertised window size.
 - [[Rules and AGENTS.md]] — the always-loaded surface
 - [[Plan-Build-Verify Workflow]] — natural compression checkpoints
 - [[Common Failure Patterns]] — what goes wrong when you ignore this
+- [[Practical Limits of AI]] — the underlying reasons this discipline is load-bearing
 
 ---
-**Sources:** [^cc-best] [^cc-how] [^cc-mem] [^oc-skills]
+**Sources:** [^cc-best] [^cc-how] [^cc-mem] [^oc-skills] [^limits-of-ai-yt] [^simple-aufgabe-yt]
