@@ -81,7 +81,7 @@ The pattern is a direct descendant of **Vannevar Bush's Memex** (1945) — a pri
 The gist mentions these as "use if useful, ignore if not":[^llm-wiki-gist]
 
 - **Obsidian Web Clipper** — browser extension that converts web articles to markdown for the `raw/` collection.
-- **qmd** — local hybrid (BM25 + vector) markdown search engine with a CLI and an MCP server. Useful once the wiki outgrows the index file. <https://github.com/tobi/qmd>
+- **qmd** — local hybrid (BM25 + vector) markdown search engine with a CLI and an MCP server. Useful once the wiki outgrows the index file.[^qmd]
 - **Obsidian graph view** — best way to spot hubs, orphans, and the actual shape of the wiki.
 - **Marp** — markdown-based slide decks generated from wiki pages.
 - **Dataview** — Obsidian plugin that queries page frontmatter to build dynamic tables. Pairs well with structured `tags`/`status`/`last_verified` fields (see [[AGENTS#3.1 Frontmatter]]).
@@ -96,7 +96,8 @@ None are required. This vault currently uses none of them beyond plain Obsidian 
 - [[Plan-Build-Verify Workflow]] — ingest's "discuss-then-write" is plan-then-build at the knowledge layer.
 - [[Sub-Agents and Delegation]] — large ingest tasks (re-classify the whole vault, lint everything) are natural delegation candidates.
 - [[GSD (Get Shit Done)]] — same persistent-artifact insight applied to *project state* (`STATE.md`, `CONTEXT.md`, `ROADMAP.md`) instead of knowledge.
+- [[MCP Servers#`memory-mcp` — persistent knowledge graph across sessions|`memory-mcp` MCP]] — alternative durable-memory mechanism (in-memory KG vs. markdown). Complementary, not a substitute. See the comparison table there.
 - [[AGENTS]] — this vault's concrete instantiation of the schema layer.
 
 ---
-**Sources:** [^llm-wiki-gist]
+**Sources:** [^llm-wiki-gist] [^qmd]

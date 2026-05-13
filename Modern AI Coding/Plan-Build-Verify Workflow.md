@@ -70,6 +70,9 @@ The verify phase is what separates "looks done" from "is done." Three layers:
 
 For agentic work, **always run the tests yourself** — don't trust the agent's claim of "tests pass." A surprisingly common failure mode is the agent stopping at the first command that returns 0, even if no tests actually ran.
 
+> [!tip] Browser-based verification
+> For frontend work, the [[MCP Servers#`chrome-devtools` — browser as a verification surface|`chrome-devtools` MCP]] turns the verify phase into a closed loop the agent can run itself: navigate, snapshot, run Lighthouse, read console errors, take a perf trace, fix, repeat — without leaving the session.
+
 > [!tip] Test-driven gives the agent a target
 > Writing the test *first* (Red), letting the agent implement (Green), then asking for refactor (Refactor) is the classic TDD loop and works extremely well with agents because the test gives them an objective signal of "done."[^cc-best]
 

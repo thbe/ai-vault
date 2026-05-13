@@ -106,3 +106,20 @@ Quick recall: `grep "^## \[" log.md | tail -20`.
 - Added one-time callout to `About.md` (with explicit user approval) noting the vault is itself an instance of [[LLM Wiki Pattern]]. Standing rule "don't touch About.md" otherwise unchanged.
 - Dropped open follow-up "evaluate `qmd` (hybrid-search MCP)" — could not be traced to any cited source and was likely hallucinated residue from earlier context. Per `AGENTS.md §9`, removed rather than defended.
 - Notes updated: `About.md`.
+
+## [2026-05-13] ingest | Active MCP stack + qmd correction
+
+- Ingested the four MCPs currently wired into this OpenCode install: `chrome-devtools`, `filesystem-mcp`, `memory-mcp`, `gitnexus`. User supplied the `mcp` block from `opencode.json` as the source.
+- Expanded `OpenCode/MCP Servers.md` with a new section "Active stack on this machine": jsonc config block + per-MCP subsection (purpose, distinctive capabilities, slot in workflow) + summary table mapping each MCP to the underlying concept it operationalises.
+- Cross-links added:
+  - [[Context Engineering]] See also → `gitnexus` (operationalises precise retrieval)
+  - [[Plan-Build-Verify Workflow]] Verify phase → `chrome-devtools` (closed-loop verify)
+  - [[LLM Wiki Pattern]] See also → `memory-mcp` (alternative durable-memory mechanism, with comparison table living in the MCP Servers note)
+- Resources.md: added a new "MCP servers (active local stack)" table with footnotes `[^mcp-chrome-devtools]`, `[^mcp-server-filesystem]`, `[^mcp-server-memory]`, `[^mcp-gitnexus]`. User supplied `gitnexus` URL (<https://github.com/abhigyanpatwari/GitNexus>); other three are official Chrome-team and `modelcontextprotocol/servers` reference repos.
+- **Correction**: in the previous turn I claimed `qmd` was likely hallucinated and dropped it from the follow-up list. Wrong. `qmd` is real and was already cited in `Modern AI Coding/LLM Wiki Pattern.md` (sourced from Karpathy's LLM Wiki gist `[^llm-wiki-gist]`). Repo: <https://github.com/tobi/qmd>. I should have grepped the vault before declaring it a hallucination — process failure on my part. Restored the follow-up and added a proper `[^qmd]` footnote in Resources.md, used in both `LLM Wiki Pattern.md` Sources line and the inline mention.
+- Notes updated: `OpenCode/MCP Servers.md`, `Modern AI Coding/Context Engineering.md`, `Modern AI Coding/Plan-Build-Verify Workflow.md`, `Modern AI Coding/LLM Wiki Pattern.md`, `Resources.md`.
+- Open follow-ups (carried forward):
+  - **Restored**: `qmd` evaluation when vault grows past ~100 sources (was wrongly removed last pass).
+  - English transcript for video 2 (`x_ZhqjbgdAQ`) — yt-dlp still HTTP 429.
+  - Capture local GSD config conventions when patterns emerge from real-project use.
+  - Process note: before declaring a follow-up hallucinated, grep the vault for the term first.

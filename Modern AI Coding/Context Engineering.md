@@ -123,6 +123,7 @@ Above this, expect quality degradation regardless of advertised window size.
 - [[Plan-Build-Verify Workflow]] — natural compression checkpoints
 - [[Common Failure Patterns]] — what goes wrong when you ignore this
 - [[Practical Limits of AI]] — the underlying reasons this discipline is load-bearing
+- [[MCP Servers#`gitnexus` — code knowledge graph|`gitnexus` MCP]] — operationalises this discipline by replacing grep-and-hope with ranked, structurally-correct retrieval
 
 ---
 **Sources:** [^cc-best] [^cc-how] [^cc-mem] [^oc-skills] [^limits-of-ai-yt] [^simple-aufgabe-yt] [^llm-wiki-gist] [^gsd-readme]

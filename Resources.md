@@ -50,6 +50,16 @@ Authoritative external sources cited across this vault. Notes reference these by
 | [^cursor] | Cursor docs | <https://cursor.com/docs> |
 | [^cline] | Cline (formerly Claude Dev) | <https://github.com/cline/cline> |
 
+## MCP servers (active local stack)
+
+| # | Source | URL |
+|---|---|---|
+| [^mcp-chrome-devtools] | `chrome-devtools-mcp` — official Chrome DevTools MCP server (browser automation, performance traces, Lighthouse audits) | <https://github.com/ChromeDevTools/chrome-devtools-mcp> |
+| [^mcp-server-filesystem] | `@modelcontextprotocol/server-filesystem` — official reference filesystem MCP | <https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem> |
+| [^mcp-server-memory] | `@modelcontextprotocol/server-memory` — official reference knowledge-graph memory MCP | <https://github.com/modelcontextprotocol/servers/tree/main/src/memory> |
+| [^mcp-gitnexus] | `gitnexus` — code knowledge graph MCP (BM25 + vector hybrid query, impact analysis, Cypher access). Distributed as a binary. | <https://github.com/abhigyanpatwari/GitNexus> |
+| [^qmd] | `qmd` — local hybrid (BM25 + vector) markdown search engine with CLI and MCP server. Companion to the [[LLM Wiki Pattern]] for vaults outgrowing a single index file. | <https://github.com/tobi/qmd> |
+
 ## Talks & essays
 
 | # | Source | URL | Local copy |
@@ -89,3 +99,8 @@ Authoritative external sources cited across this vault. Notes reference these by
 [^simple-aufgabe-yt]: <https://youtu.be/x_ZhqjbgdAQ>
 [^llm-wiki-gist]: <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>
 [^gsd-readme]: <https://github.com/gsd-build/get-shit-done>
+[^mcp-chrome-devtools]: <https://github.com/ChromeDevTools/chrome-devtools-mcp>
+[^mcp-server-filesystem]: <https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem>
+[^mcp-server-memory]: <https://github.com/modelcontextprotocol/servers/tree/main/src/memory>
+[^mcp-gitnexus]: <https://github.com/abhigyanpatwari/GitNexus>
+[^qmd]: <https://github.com/tobi/qmd>
